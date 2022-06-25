@@ -1,38 +1,88 @@
-.App {
+
+.App{
+  min-height: 100vh;
+  background-color: rgb(246, 246, 246);
+}
+.container{
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.spiner{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+.header_block {
+  width: 100%;
+  height: 50vh;
+  padding: 30px;
+  background-image: url("https://www.oecd-nea.org/upload/docs/image/jpeg/2020-11/book_stack.jpg");
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header_box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header_box h1 {
+  margin: 20px 0px;
+  font-size: 60px;
+  text-shadow: 0px 0px 10px rgb(30, 30, 30);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box-select {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+.lable{
+  font-weight: 600;
+  font-size: 25px;
+  text-shadow: 0px 0px 20px  black;
+}
+
+/* Cards */
+
+
+
+.box-cards{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.block-card{
+  transition: .2s;
+}
+.block-card:hover{
+  transform: scale(1.02);
+}
+
+/* modal */
+
+.content-modal{
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.left-content-modal {
+  width: 50%;
+  margin-right: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-content-modal img {
+  width: 100%;
+}
+.right-content-modal{
+  width: 50%;
 }
